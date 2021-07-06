@@ -62,30 +62,3 @@ public class Timer {
         this.seconds = seconds;
     }
 }
-/*
-*  int m = -1, s = -1;
-                try {
-                    m = Integer.parseInt(min.getText());
-                    s = Integer.parseInt(sec.getText());
-                } catch (NumberFormatException ex) {
-                    min.setText(ex.getMessage());
-                } catch (NullPointerException ex) {
-                    sec.setText(ex.getMessage());
-                }
-                model.Timer timer = new model.Timer(m, s);
-                int sum = timer.getMinutes() * 60 + timer.getSeconds();
-                for (int i = 0; i < sum + 1; i++) {
-                    if (i == 0) {
-                        min.setText(Integer.toString(timer.getMinutes()));
-                        sec.setText(Integer.toString(timer.getSeconds()));
-                    } else {
-                        System.out.println(timer.decreaseOneSecond());//talisa -1 varykan arajva String-y
-                        min.setText(Integer.toString(timer.getMinutes()));
-                        sec.setText(Integer.toString(timer.getSeconds()));
-                    }
-                    try {
-                        Thread.sleep(1000);
-                    } catch (InterruptedException ex) {
-                        min.setText(ex.getMessage());
-                    }
-                }*/
